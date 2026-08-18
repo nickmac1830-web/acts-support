@@ -1,0 +1,65 @@
+:root{
+  --navy:#07142f;
+  --navy2:#101f43;
+  --gold:#f2c744;
+  --gold2:#d79d08;
+  --cream:#fff8db;
+  --text:#f6f7fb;
+  --muted:#c8ccda;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  background:linear-gradient(180deg,var(--navy),#0b1735 50%,#071229);
+  color:var(--text);
+  line-height:1.65;
+}
+header{
+  border-bottom:1px solid rgba(242,199,68,.45);
+  background:rgba(5,14,34,.96);
+  position:sticky; top:0; z-index:10;
+}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+nav{
+  min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px
+}
+.brand{font-size:1.25rem;font-weight:800;letter-spacing:.02em;color:white;text-decoration:none}
+.brand span{color:var(--gold)}
+.links{display:flex;gap:18px;flex-wrap:wrap}
+.links a{color:var(--cream);text-decoration:none;font-weight:600;font-size:.95rem}
+.links a:hover{color:var(--gold)}
+.hero{padding:72px 0 42px;text-align:center}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.05;margin:0 0 14px}
+.hero p{color:var(--muted);font-size:1.15rem;max-width:700px;margin:0 auto}
+.card{
+  background:linear-gradient(180deg,rgba(23,37,72,.97),rgba(14,27,56,.97));
+  border:1px solid rgba(242,199,68,.34);
+  border-radius:18px;
+  padding:28px;
+  margin:0 0 22px;
+  box-shadow:0 14px 34px rgba(0,0,0,.18);
+}
+h2{color:var(--gold);margin-top:0}
+h3{color:#ffe17b}
+a{color:#ffe17b}
+.meta{color:var(--muted);font-size:.95rem}
+.notice{
+  border-left:4px solid var(--gold);
+  padding:14px 18px;
+  background:rgba(242,199,68,.09);
+  border-radius:8px;
+}
+footer{
+  margin-top:52px;padding:30px 0 45px;border-top:1px solid rgba(242,199,68,.25);
+  color:var(--muted);font-size:.9rem;text-align:center
+}
+.button{
+  display:inline-block;background:linear-gradient(90deg,var(--gold2),#ffe169);
+  color:#101010;text-decoration:none;font-weight:800;padding:12px 20px;border-radius:10px
+}
+ul{padding-left:22px}
+@media(max-width:700px){
+  nav{align-items:flex-start;flex-direction:column;padding:18px 0}
+  .hero{padding-top:48px}
+}
